@@ -4,11 +4,11 @@ title:  "面向对象-继承"
 date:   2016-07-29 18:18:41 +0800
 categories: JavaScript
 ---
-#一、问题
-####1.继承有什么作用? （难度:\***）
+# 一、问题
+#### 1.继承有什么作用? （难度:\***）
 继承的作用，可以使用原型链上的属性和方法，这样的方式可以节省内存空间。同时将相同作用的代码抽象出来，提高了代码的复用性，也更容易让人理解。
 ***
-####2.有几种常见创建对象的方式? 举例说明? （难度:\*\***）
+#### 2.有几种常见创建对象的方式? 举例说明? （难度:\*\***）
 * 直接声明
 这种方法的缺点就是声明太过于繁琐，重复造轮子
 ```
@@ -75,7 +75,7 @@ categories: JavaScript
       console.log(p1.sayName===p2.sayName)  //true
 ```
 ***
-####3.下面两种写法有什么区别? （难度:\***）
+#### 3.下面两种写法有什么区别? （难度:\***）
 方法一中每一个创建的对象都有一个独立的printName方法，方法二中每一个创建对象共享原型对象中的printName方法
 ```
     function People(name, sex){
@@ -99,7 +99,7 @@ categories: JavaScript
     var p1 = new Person('若愚', 27);
 
 ```
-####4.Object.create有什么作用？兼容性如何？如何使用？ （难度:\***）
+#### 4.Object.create有什么作用？兼容性如何？如何使用？ （难度:\***）
 Object.create()方法创建一个拥有指定原型和若干个指定属性的对象，是ES5的方法。
 语法：
 Object.create(*proto,* [ *propertiesObject* ])
@@ -159,7 +159,7 @@ Object.create(*proto,* [ *propertiesObject* ])
     });
 ```
 ***
-####5.hasOwnProperty有什么作用？ 如何使用？ （难度:\***）
+#### 5.hasOwnProperty有什么作用？ 如何使用？ （难度:\***）
 * hasOwnProperty()方法用来判断某个对象是否含有指定的自身属性。
 ```
   var o ={
@@ -179,7 +179,7 @@ Object.create(*proto,* [ *propertiesObject* ])
     console.log(o.hasOwnProperty("name"));  //true
     console.log(o.hasOwnProperty("toString")); //false
 ```
-####6.实现Object.create的 polyfill，如：（ps: 写个 函数create，实现 Object.create 的功能）,什么是 polyfill？（难度:\*\***）
+#### 6.实现Object.create的 polyfill，如：（ps: 写个 函数create，实现 Object.create 的功能）,什么是 polyfill？（难度:\*\***）
 ```
 if(typeof Object.create!=="function"){
   Object.create=function(){
@@ -206,7 +206,7 @@ if(typeof Object.create!=="function"){
 }
 ```
 ***
-####7.如下代码中call的作用是什么? （难度:\*\***）
+#### 7.如下代码中call的作用是什么? （难度:\*\***）
 call的作用就是改变函数的上下文；
 当 Male作为函数调用时，this=window  相当于在window上加了三个属性；
 而Male作为构造函数使用时 this指代创建的对象，相当于在对象初始化了 三个属性；
@@ -220,7 +220,7 @@ call的作用就是改变函数的上下文；
       this.age = age;
     }
 ```
-####8.补全代码，实现继承 （难度:\*\***）
+#### 8.补全代码，实现继承 （难度:\*\***）
 ```
     function Person(name, sex){
         this.name=name;
