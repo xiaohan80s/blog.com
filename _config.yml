@@ -10,8 +10,8 @@ title: 小韩同学的博客
 email:
 description: > # this means to ignore newlines until "baseurl:"
     小韩同学
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/blog.com" # the subpath of your site, e.g. /blog
+url: "https://xiaohan80s.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username:
 
