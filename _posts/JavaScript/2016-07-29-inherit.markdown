@@ -13,7 +13,6 @@ categories: JavaScript
 这种方法的缺点就是声明太过于繁琐，重复造轮子
 
 ``` 
-
 var p1={
         name:"xiaohan",
         sayName:function(){
@@ -28,7 +27,6 @@ var p1={
       };
       p1.sayName();
       p2.sayName();
-      
    ```
 参考文档:
 * [饥人谷课件-原型链 继承](http://kejian.jirengu.com/web-fe3)
