@@ -27,6 +27,7 @@ var p1={
       };
       p1.sayName();
       p2.sayName();
+      
    ```
 * 工厂模式
 工厂模式比直接声明提高了代码的复用性，下面的例子中我无法获知p1、p2 和creatPerson之间的关系。
@@ -45,6 +46,7 @@ function creatPerson(name){
       p1.sayName();
       var p2=creatPerson("xiaosu");
       p2.sayName();
+      
  ```
 * 构造函数模式
 构造函数方式可以清除的表示构造函数和对象之间的关系，但每个对象都会重复创造公用的方法。
@@ -61,6 +63,7 @@ function creatPerson(name){
           p1.sayName();
           p2.sayName();
           console.log(p1.sayName===p2.sayName)  //false
+          
 ```
 * 原型方式
 原型方式将每个对象的通用方法 放到构造函数的原型对象上，这样每个对象都使用同一个公用方法，减少了内存的使用
