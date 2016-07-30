@@ -78,6 +78,7 @@ categories: other
 ####3.下面两种写法有什么区别? （难度:\***）
 方法一中每一个创建的对象都有一个独立的printName方法，方法二中每一个创建对象共享原型对象中的printName方法
 ```
+
     function People(name, sex){
         this.name = name;
         this.sex = sex;
