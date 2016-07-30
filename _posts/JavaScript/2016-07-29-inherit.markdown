@@ -28,6 +28,23 @@ var p1={
       p1.sayName();
       p2.sayName();
    ```
+* 工厂模式
+工厂模式比直接声明提高了代码的复用性，下面的例子中我无法获知p1、p2 和creatPerson之间的关系。
+```
+      function creatPerson(name){
+        var obj={
+          name:name,
+          sayName:function(){
+            console.log(this.name);
+          }
+        };
+        return obj;
+      }
+      var p1=creatPerson("xiaohan");
+      p1.sayName();
+      var p2=creatPerson("xiaosu");
+      p2.sayName();
+```
 参考文档:
 * [饥人谷课件-原型链 继承](http://kejian.jirengu.com/web-fe3)
 * [hasOwnProperty的用法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
