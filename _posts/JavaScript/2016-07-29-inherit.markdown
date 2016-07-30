@@ -11,8 +11,8 @@ categories: JavaScript
 #### 2.有几种常见创建对象的方式? 举例说明? （难度:\*\***）
 * 直接声明
 这种方法的缺点就是声明太过于繁琐，重复造轮子
-``` 
 
+``` 
 var p1={
         name:"xiaohan",
         sayName:function(){
