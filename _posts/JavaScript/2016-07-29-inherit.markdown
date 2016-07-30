@@ -30,8 +30,9 @@ var p1={
    ```
 * 工厂模式
 工厂模式比直接声明提高了代码的复用性，下面的例子中我无法获知p1、p2 和creatPerson之间的关系。
+
 ```
-      function creatPerson(name){
+function creatPerson(name){
         var obj={
           name:name,
           sayName:function(){
