@@ -11,7 +11,8 @@ categories: JavaScript
 #### 2.有几种常见创建对象的方式? 举例说明? （难度:\*\***）
 * 直接声明
 这种方法的缺点就是声明太过于繁琐，重复造轮子
-``` var p1={
+``` 
+var p1={
         name:"xiaohan",
         sayName:function(){
           console.log(this.name);
@@ -24,10 +25,12 @@ categories: JavaScript
         }
       };
       p1.sayName();
-      p2.sayName();```
+      p2.sayName();
+   ```
 * 工厂模式
 工厂模式比直接声明提高了代码的复用性，下面的例子中我无法获知p1、p2 和creatPerson之间的关系。
-```function creatPerson(name){
+```
+function creatPerson(name){
         var obj={
           name:name,
           sayName:function(){
@@ -39,7 +42,8 @@ categories: JavaScript
       var p1=creatPerson("xiaohan");
       p1.sayName();
       var p2=creatPerson("xiaosu");
-      p2.sayName();```
+      p2.sayName();
+ ```
 * 构造函数模式
 构造函数方式可以清除的表示构造函数和对象之间的关系，但每个对象都会重复创造公用的方法。
 ```
